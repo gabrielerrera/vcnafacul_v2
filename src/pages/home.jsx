@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
 import * as UserAction from "../store/actions/userAction";
+import MapsGoogle from "../components/mapsGoogle";
 
 const Home = ({ user, change }) => {
   return (
@@ -11,6 +12,7 @@ const Home = ({ user, change }) => {
       {user.firstName}
       {user.email}
       <input onChange={(event) => change(event.target.value)} />
+      <MapsGoogle />
     </div>
   );
 };
