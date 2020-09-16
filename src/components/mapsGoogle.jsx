@@ -1,13 +1,14 @@
 import React from "react";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import KeyApi from "../constantes";
+import { connect } from "react-redux";
 
 const containerStyle = {
   width: "400px",
   height: "400px",
 };
 
-function MyComponent() {
+function MyComponent({ marker }) {
   const [map, setMap] = React.useState(null);
 
   const [myLongitude, setMyLongitude] = React.useState(39.0200);
@@ -63,11 +64,17 @@ function MyComponent() {
         onLoad={onLoad}
         onUnmount={onUnmount}
       >
-        <Marker position={center} />
+        { marker.map(value => (
+          <Marker position={{lat: value.lat, lng: value.long}} label={value.name} />
+        )) }
         <></>
       </GoogleMap>
     </LoadScript>
   );
 }
 
-export default React.memo(MyComponent);
+
+const mapStateToProps = (state) => ({ marker: state.MarkerReducer });
+
+
+export default connect(mapStateToProps)(React.memo(MyComponent));

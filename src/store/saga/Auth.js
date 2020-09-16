@@ -1,3 +1,5 @@
+//Quais são as minhas variaveis que virão do backend pro frontend????
+
 const initialStates = { firstName: "iago", email: "emaildoiago@top.com.br" };
 
 function reducer(state = initialStates, actions) {

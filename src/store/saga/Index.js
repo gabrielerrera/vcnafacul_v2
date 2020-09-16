@@ -1,6 +1,8 @@
 import { combineReducers, createStore, applyMiddleware, compose } from "redux";
 import promise from "redux-promise";
+
 import AuthReducer from "./Auth";
+import MarkerReducer from "./Maps";
 
 function saveToLocalStorage(state) {
   try {
@@ -24,7 +26,7 @@ function loadFromLocalStorage() {
 
 const persistedState = loadFromLocalStorage();
 
-const reducers = combineReducers({ AuthReducer });
+const reducers = combineReducers({ AuthReducer, MarkerReducer });
 
 const store = createStore(reducers, persistedState, applyMiddleware(promise));
 
