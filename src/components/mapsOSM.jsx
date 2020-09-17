@@ -67,7 +67,7 @@ class LocalizaCursinho extends Component {
               attribution='&copy; <a href="http://osm.org/copyright"> OpenStreetMap </a> contributors'
             ></TileLayer>
             {this.props.marker.map((value) => (
-              <Marker position={[value.lat, value.long]}>
+              <Marker key={value.id} position={[value.lat, value.long]}>
                 
                 <Popup>{value.name}</Popup>
               </Marker>

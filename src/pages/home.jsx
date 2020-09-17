@@ -10,7 +10,7 @@ const Home = ({ user, change }) => {
   return (
     <div>
       <Link to="/login">LoginBrabo</Link>
-      {user.firstName}
+      {user.statusLogin}
       {user.email}
       <input onChange={(event) => change(event.target.value)} />
       <MapsOSM />
