@@ -1,19 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
 import * as UserAction from "../store/actions/userAction";
 /* import MapsGoogle from "../components/mapsGoogle"; */
-import MapsOSM from "../components/mapsOSM";
 
-const Home = ({ user, change }) => {
+import MenuNav from '../components/MenuHome/index';
+
+const Home = () => {
   return (
     <div>
-      <Link to="/login">LoginBrabo</Link>
-      {user.statusLogin}
-      {user.email}
-      <input onChange={(event) => change(event.target.value)} />
-      <MapsOSM />
+      <MenuNav />
     </div>
   );
 };
