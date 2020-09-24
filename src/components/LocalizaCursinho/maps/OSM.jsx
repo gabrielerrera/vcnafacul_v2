@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import { Map, TileLayer, Marker, Popup } from "react-leaflet";
 import { connect } from "react-redux";
 
-import "./styleMapsOSM/style.css";
+import * as MapsActions from '../../../store/actions/mapActions';
+
+import './styleMapsOSM/style.css';
 
 class LocalizaCursinho extends Component {
   constructor(props) {
@@ -50,13 +52,6 @@ class LocalizaCursinho extends Component {
 
     return (
       <div>
-        {/*  <div className="infoLocaliza">
-            <span>{this.state.nameCourse}</span>
-            <span>{this.state.state}</span>
-            <span>{this.state.city}</span>
-            <span>{this.state.neighborhood}</span>
-            <span>{this.state.street} {this.state.number}</span>
-        </div> */}
         <div className="localizacursinhobody">
           <Map
             center={[this.state.myLatitude, this.state.myLongitude]}
@@ -66,9 +61,8 @@ class LocalizaCursinho extends Component {
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
               attribution='&copy; <a href="http://osm.org/copyright"> OpenStreetMap </a> contributors'
             ></TileLayer>
-            {this.props.marker.map((value) => (
-              <Marker key={value.id} position={[value.lat, value.long]}>
-                
+            {this.props.marker.cursinho.map((value) => (
+              <Marker key={value.id} position={[value.lat, value.long]} onclick={()=>this.props.click({id: value.id, name: value.name})} >
                 <Popup>{value.name}</Popup>
               </Marker>
             ))}
@@ -81,4 +75,8 @@ class LocalizaCursinho extends Component {
 
 const mapStateToProps = (state) => ({ marker: state.MarkerReducer });
 
-export default connect(mapStateToProps)(LocalizaCursinho);
+const mapDispatchToProps = (dispatch) => ({
+  click: (obj) => dispatch(MapsActions.click(obj)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(LocalizaCursinho);

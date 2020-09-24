@@ -20,7 +20,6 @@ const PrivateRoutes = (statusLogin, isTeacher) => {
 };
 
 const Routes = ({ user }) => {
-  console.log(user.statusLogin, user.isTeacher)
   return (
   <BrowserRouter>
     <Switch>

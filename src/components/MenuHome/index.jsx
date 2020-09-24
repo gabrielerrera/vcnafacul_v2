@@ -2,21 +2,24 @@ import React from 'react';
 import logo from '../images/logo.png';
 
 import { Div, Img, StyleLink, Nav } from './styled';
+import { StyledDiv } from '../globalStyle';
 
 const MenuNav = () => (
+  <StyledDiv>
   <Nav>
     <Img src={logo} alt="Logo você na Facul"/>
     <Div>
       <div>
-        <StyleLink>Quem Somos</StyleLink>
-        <StyleLink>Localiza Cursinho</StyleLink>
+        <StyleLink to='/' >Quem Somos</StyleLink>
+        <StyleLink to='/' >Localiza Cursinho</StyleLink>
       </div>
       <div>
-        <StyleLink>Entrar</StyleLink>
-        <StyleLink>Cadastro</StyleLink>
+        <StyleLink to='/' >Entrar</StyleLink>
+        <StyleLink to='/' >Cadastro</StyleLink>
       </div>
     </Div>
   </Nav>
+  </StyledDiv>
 )
 
 export default MenuNav;

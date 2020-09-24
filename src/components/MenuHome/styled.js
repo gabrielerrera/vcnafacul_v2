@@ -4,7 +4,6 @@ import {Link} from 'react-router-dom';
 export const Img =  styled.img`
   width: 120px;
   position: relative;
-  margin-left: 20px;
   margin-top: 20px;
   margin-right: 20px;
 `
@@ -19,7 +18,6 @@ export const Div = styled.div`
   justify-content: space-between;
   width: 100%;
   margin-left: 20px;
-  margin-right: 50px;
 `
 export const StyleLink = styled(Link)`
   text-decoration: none;
