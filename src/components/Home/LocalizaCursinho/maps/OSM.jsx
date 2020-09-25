@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import { Map, TileLayer, Marker, Popup } from "react-leaflet";
 import { connect } from "react-redux";
 
-import * as MapsActions from '../../../store/actions/mapActions';
+import * as MapsActions from "../../../../store/actions/mapActions";
 
-import './styleMapsOSM/style.css';
+import "./styleMapsOSM/style.css";
 
 class LocalizaCursinho extends Component {
   constructor(props) {
@@ -12,19 +12,13 @@ class LocalizaCursinho extends Component {
     this.state = {
       myLatitude: -23.5496976,
       myLongitude: -46.6342887,
-      nameCourse: "",
-      state: "",
-      city: "",
-      neighborhood: "",
-      street: "",
-      number: "",
     };
   }
 
   success = (position) => {
     this.setState({
-      myLongitude: position.coords.longitude,
       myLatitude: position.coords.latitude,
+      myLongitude: position.coords.longitude,
     });
   };
 
@@ -49,7 +43,7 @@ class LocalizaCursinho extends Component {
 
   render() {
     navigator.geolocation.getCurrentPosition(this.success, this.showError);
-
+    console.log(this.state.myLatitude, this.state.myLongitude);
     return (
       <div>
         <div className="localizacursinhobody">
@@ -62,8 +56,23 @@ class LocalizaCursinho extends Component {
               attribution='&copy; <a href="http://osm.org/copyright"> OpenStreetMap </a> contributors'
             ></TileLayer>
             {this.props.marker.cursinho.map((value) => (
-              <Marker key={value.id} position={[value.lat, value.long]} onclick={()=>this.props.click({id: value.id, name: value.name})} >
-                <Popup>{value.name}</Popup>
+              <Marker
+                key={value.id}
+                position={[value.lat, value.lng]}
+                onclick={() =>
+                  this.props.click({
+                    Name: value.Name,
+                    State: value.State,
+                    City: value.City,
+                    Neighborhood: value.Neighborhood,
+                    Street: value.Street,
+                    Number: value.Number,
+                    Compements: value.Compements,
+                    Site: value.Site,
+                  })
+                }
+              >
+                <Popup>{value.Name}</Popup>
               </Marker>
             ))}
           </Map>

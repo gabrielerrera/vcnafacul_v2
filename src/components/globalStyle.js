@@ -21,14 +21,14 @@ export const DivPrincipal = styled.div`
   justify-content: space-between;
 `
 export const DivSecundaria = styled.div`
-  width: 50vw;
-  max-width: 600px;
+  width: ${props => props.width || "50vw"};
   min-width: 400px;
   margin: 20px;
+
 `
 
 export const Title = styled.h1`
-  font-size: 70px;
+  font-size: ${props => props.font || "70px"};
   text-transform: uppercase;
   line-height: 80px;
   font-family: 'Passion One';
@@ -44,12 +44,13 @@ export const Title = styled.h1`
 `
 
 export const Body = styled.p`
-  font-size: 25px;
+  font-size: ${props => props.font || "25px"};
   max-width: 500px;
-  line-height: 30px;
+  line-height: ${props => props.line || "30px"};
   font-family: 'pavanam';
   margin-top: 0px;
   color: #00305A;
+  font-weight: ${props => props.weight || "normal"};
 
   ${props => props.colors && css`
   color: white;

@@ -1,5 +1,5 @@
 import React from "react";
-import { Body, StyledDiv, DivPrincipal, DivSecundaria, Title  } from "../globalStyle";
+import { Body, StyledDiv, DivPrincipal, DivSecundaria, Title  } from "../../globalStyle";
 import { Button } from "./styled";
 
 const DivPrincipalHomePage = () => (

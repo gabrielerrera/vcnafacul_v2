@@ -1,8 +1,8 @@
 import React from 'react';
-import logo from '../images/logo.png';
+import logo from '../../images/logo.png';
 
 import { Div, Img, StyleLink, Nav } from './styled';
-import { StyledDiv } from '../globalStyle';
+import { StyledDiv } from '../../globalStyle';
 
 const MenuNav = () => (
   <StyledDiv>

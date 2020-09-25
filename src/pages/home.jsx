@@ -1,9 +1,10 @@
 import React from "react";
 
-import MenuNav from '../components/MenuHome/index';
-import DivPrincipalHomePage from '../components/DivPrincipalHomePage/index';
-import QuemSomos from '../components/QuemSomos/index';
-import Localiza from '../components/LocalizaCursinho/index';
+import MenuNav from '../components/Home/MenuHome/index';
+import DivPrincipalHomePage from '../components/Home/DivPrincipalHomePage/index';
+import QuemSomos from '../components/Home/QuemSomos/index';
+import Localiza from '../components/Home/LocalizaCursinho/index';
+import Footer from '../components/Home/Footer/index';
 
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
       <DivPrincipalHomePage/>
       <QuemSomos />
       <Localiza/>
+      <Footer/>
     </div>
   );
 };

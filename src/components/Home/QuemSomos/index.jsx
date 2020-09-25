@@ -8,10 +8,10 @@ import {
   DivSecundaria,
   StyledDiv,
   Title,
-} from "../globalStyle";
+} from "../../globalStyle";
 import { Recorte } from "./styled";
 
-import recorte from "../images/recorte.png";
+import recorte from "../../images/recorte.png";
 
 const QuemSomos = () => (
   <div>
