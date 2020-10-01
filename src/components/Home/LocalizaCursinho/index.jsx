@@ -62,7 +62,7 @@ const Localiza = ({ marker }) => (
           <Body font="20px">{marker.click.Compements}</Body>
         </Container>
       </DivSecundaria>
-      <DivSecundaria width="70vw">
+      <DivSecundaria width="50vw">
         <OSM />
       </DivSecundaria>
     </DivPrincipal>

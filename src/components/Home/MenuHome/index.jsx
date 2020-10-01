@@ -13,10 +13,6 @@ const MenuNav = () => (
         <StyleLink to='/' >Quem Somos</StyleLink>
         <StyleLink to='/' >Localiza Cursinho</StyleLink>
       </div>
-      <div>
-        <StyleLink to='/' >Entrar</StyleLink>
-        <StyleLink to='/' >Cadastro</StyleLink>
-      </div>
     </Div>
   </Nav>
   </StyledDiv>

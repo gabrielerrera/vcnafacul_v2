@@ -14,16 +14,31 @@ export const StyledDiv = styled.div`
   margin-left: 60px;
   margin-right: 60px;
   margin-bottom: 20px;
+
+  @media (max-width: 400px) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
 `;
 
 export const DivPrincipal = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 400px) {
+    flex-direction: column-reverse;
+  }
+
 `
 export const DivSecundaria = styled.div`
   width: ${props => props.width || "50vw"};
   min-width: 400px;
   margin: 20px;
+
+  @media (max-width: 400px) {
+    min-width: 300px;
+  }
 
 `
 
@@ -41,6 +56,11 @@ export const Title = styled.h1`
   font-size: 60px;
   `}
 
+  @media (max-width: 400px) {
+    line-height: 40px;
+    font-size: 50px;
+  }
+
 `
 
 export const Body = styled.p`
@@ -55,4 +75,9 @@ export const Body = styled.p`
   ${props => props.colors && css`
   color: white;
   `}
+
+  @media (max-width: 400px) {
+    line-height: 20px;
+    font-size: 15px;
+  }
 `
