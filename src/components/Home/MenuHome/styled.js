@@ -39,4 +39,5 @@ export const StyleLink = styled(Link)`
   text-decoration: none;
   padding: 10px;
   margin-left: 20px;
+  font-size: 1.7rem;
 `

@@ -43,7 +43,7 @@ export const DivSecundaria = styled.div`
 `
 
 export const Title = styled.h1`
-  font-size: ${props => props.font || "70px"};
+  font-size: ${props => props.font || "8rem"};
   text-transform: uppercase;
   line-height: 80px;
   font-family: 'Passion One';
@@ -53,7 +53,7 @@ export const Title = styled.h1`
 
   ${props => props.colors && css`
   color: white;
-  font-size: 60px;
+ 
   `}
 
   @media (max-width: 400px) {
@@ -64,16 +64,22 @@ export const Title = styled.h1`
 `
 
 export const Body = styled.p`
-  font-size: ${props => props.font || "25px"};
+  font-size: ${props => props.font || "2.7rem"};
   max-width: 500px;
   line-height: ${props => props.line || "30px"};
   font-family: 'pavanam';
   margin-top: 0px;
+  margin-bottom: 10px;
   color: #00305A;
   font-weight: ${props => props.weight || "normal"};
 
   ${props => props.colors && css`
   color: white;
+  `}
+
+  ${props => props.loc && css`
+  margin-bottom: 2px;
+  margin-top: 5px;
   `}
 
   @media (max-width: 400px) {

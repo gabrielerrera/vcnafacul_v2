@@ -18,45 +18,45 @@ const Localiza = ({ marker }) => (
   <StyledDiv>
     <DivPrincipal>
       <DivSecundaria>
-        <Title font="50px">Localiza Cursinho</Title>
+        <Title font="5.5rem" >Localiza Cursinho</Title>
         <Container>
-          <Body  font="15px" line="15px" weight="bold">
+          <Body loc >
             Nome Do Curinho
           </Body>
           <Body  font="20px">{marker.click.Name}</Body>
         </Container>
         <Container>
-          <Body  font="15px" line="15px" weight="bold">
+          <Body loc >
             Estado
           </Body>
           <Body  font="20px">{marker.click.State}</Body>
         </Container>
         <Container>
-          <Body  font="15px" line="15px" weight="bold">
+          <Body loc >
             Cidade
           </Body>
           <Body  font="20px">{marker.click.City}</Body>
         </Container>
         <Container>
-          <Body  font="15px" line="15px" weight="bold">
+          <Body loc >
             Bairro
           </Body>
           <Body  font="20px">{marker.click.Neighborhood}</Body>
         </Container>
         <Container>
-          <Body  font="15px" line="15px" weight="bold">
+          <Body loc >
             Rua
           </Body>
           <Body  font="20px">{marker.click.Street}</Body>
         </Container>
         <Container>
-          <Body  font="15px" line="15px" weight="bold">
+          <Body loc >
             Nº
           </Body>
           <Body  font="20px">{marker.click.Number}</Body>
         </Container>
         <Container>
-          <Body  font="15px" line="15px" weight="bold">
+          <Body loc >
             Complemento
           </Body>
           <Body font="20px">{marker.click.Compements}</Body>
