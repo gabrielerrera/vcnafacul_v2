@@ -6,8 +6,12 @@ export const Recorte = styled.img`
   vertical-align: middle;
   position: relative;
 
+  ${props => props.normal && css`
+    top: -5px;
+  `}
+
   ${props => props.inverso && css`
     transform: scale(-1);
-    bottom: 10px;
+    bottom: -25px;
   `}
 `

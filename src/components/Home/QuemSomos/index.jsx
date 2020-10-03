@@ -11,11 +11,10 @@ import {
 } from "../../globalStyle";
 import { Recorte } from "./styled";
 
-import recorte from "../../images/recorte.png";
+import recorte from "../../images/recortepapelrasgado.png";
 
 const QuemSomos = () => (
-  <div>
-    <Recorte src={recorte} alt="divisão" />
+    
     <div
       style={{
         backgroundColor: Colors.color1,
@@ -25,12 +24,13 @@ const QuemSomos = () => (
         position: 'relative',
       }}
     >
+      <Recorte normal src={recorte} alt="divisão" />
       <StyledDiv>
       <DivPrincipal>
         <DivSecundaria youtube className='youtube' ><Youtube/></DivSecundaria>
         <DivSecundaria>
-          <Title colors >Quem Somos?</Title>
-          <Body colors >
+          <Title colors sobre >Quem Somos?</Title>
+          <Body colors sobre >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             sit amet gravida justo. In elementum venenatis tempor. Sed mattis
             est molestie venenatis volutpat. Maecenas mauris enim, vestibulum
@@ -42,9 +42,8 @@ const QuemSomos = () => (
         </DivSecundaria>
       </DivPrincipal>
       </StyledDiv>
+      <Recorte inverso src={recorte} alt="divisão" />
     </div>
-    <Recorte inverso src={recorte} alt="divisão" />
-  </div>
 );
 
 export default QuemSomos;

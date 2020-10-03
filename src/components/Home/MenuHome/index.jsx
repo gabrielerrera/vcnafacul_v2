@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../images/logo.png';
+import logo from '../../images/logofundobranco.png';
 
 import { Div, Img, StyleLink, Nav } from './styled';
 import { StyledDiv } from '../../globalStyle';
@@ -9,8 +9,8 @@ const MenuNav = () => (
   <Nav>
     <Img src={logo} alt="Logo você na Facul"/>
     <Div>
-        <StyleLink to='/' >Quem Somos</StyleLink>
-        <StyleLink to='/' >Localiza Cursinho</StyleLink>
+        <StyleLink to='/' >Sobre</StyleLink>
+        <StyleLink to='/' >Localiza</StyleLink>
     </Div>
   </Nav>
   </StyledDiv>

@@ -67,6 +67,15 @@ export const Title = styled.h1`
     text-align: center;
   }
 
+  ${props => props.sobre && css`
+
+  @media (max-width: 1000px) {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+
+  `}
+
   @media (min-width: 600px) and (max-width: 800px){
     line-height: 6rem;
     font-size: 7.5rem;
@@ -95,6 +104,18 @@ export const Body = styled.p`
   ${props => props.loc && css`
   margin-bottom: 2px;
   margin-top: 5px;
+  `}
+
+  ${props => props.sobre && css`
+
+  @media (min-width: 1200px) {
+    font-size: 3rem;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 1.5rem;
+  }
+
   `}
 
   @media (max-width: 800px) {

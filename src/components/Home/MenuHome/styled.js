@@ -2,10 +2,9 @@ import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 
 export const Img =  styled.img`
-  width: 120px;
+  width: 20rem;
   position: relative;
   margin-top: 20px;
-  margin-right: 20px;
 `
 
 export const Nav = styled.nav`
@@ -26,7 +25,7 @@ export const Div = styled.div`
 
 
   @media (max-width: 800px){
-    justify-content: center;
+    justify-content: space-evenly;
   }
 
   @media (min-width: 600px) and (max-width: 800px){
@@ -36,7 +35,8 @@ export const Div = styled.div`
 `
 export const StyleLink = styled(Link)`
   text-decoration: none;
-  padding: 10px;
-  margin-left: 20px;
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
   font-size: 1.7rem;
 `
