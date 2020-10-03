@@ -5,64 +5,62 @@ import { Link } from "react-router-dom";
 import OSM from "./maps/OSM";
 
 import {
-  Body,
   StyledDiv,
   DivPrincipal,
   DivSecundaria,
   Title,
 } from "../../globalStyle";
 
-import { Container } from "./styled";
+import { AllFields, Field, ValueField, TitleField } from "./styled";
+import { marker } from "leaflet";
+
+const complement = (marker) => {
+  if (marker.click.Compements) {
+    return (
+      <Field>
+        <TitleField>Compl.</TitleField>
+        <ValueField>{marker.click.Compements}</ValueField>
+      </Field>
+    );
+  } else {
+    return <></>;
+  }
+};
 
 const Localiza = ({ marker }) => (
   <StyledDiv>
-    <DivPrincipal>
+    <DivPrincipal localiza>
       <DivSecundaria>
-        <Title font="5.5rem" >Localiza Cursinho</Title>
-        <Container>
-          <Body loc >
-            Nome Do Curinho
-          </Body>
-          <Body  font="20px">{marker.click.Name}</Body>
-        </Container>
-        <Container>
-          <Body loc >
-            Estado
-          </Body>
-          <Body  font="20px">{marker.click.State}</Body>
-        </Container>
-        <Container>
-          <Body loc >
-            Cidade
-          </Body>
-          <Body  font="20px">{marker.click.City}</Body>
-        </Container>
-        <Container>
-          <Body loc >
-            Bairro
-          </Body>
-          <Body  font="20px">{marker.click.Neighborhood}</Body>
-        </Container>
-        <Container>
-          <Body loc >
-            Rua
-          </Body>
-          <Body  font="20px">{marker.click.Street}</Body>
-        </Container>
-        <Container>
-          <Body loc >
-            Nº
-          </Body>
-          <Body  font="20px">{marker.click.Number}</Body>
-        </Container>
-        <Container>
-          <Body loc >
-            Complemento
-          </Body>
-          <Body font="20px">{marker.click.Compements}</Body>
-        </Container>
+        <Title>Localiza Cursinho</Title>
+        <AllFields>
+          <Field>
+            <TitleField>Nome do Cursinho</TitleField>
+            <ValueField>{marker.click.Name}</ValueField>
+          </Field>
+          <Field>
+            <TitleField>Rua</TitleField>
+            <ValueField>{marker.click.Street}</ValueField>
+          </Field>
+          <Field>
+            <TitleField>Numero</TitleField>
+            <ValueField>{marker.click.Number}</ValueField>
+          </Field>
+          {complement(marker)}
+          <Field>
+            <TitleField>Bairro</TitleField>
+            <ValueField>{marker.click.Neighborhood}</ValueField>
+          </Field>
+          <Field>
+            <TitleField>Cidade</TitleField>
+            <ValueField>{marker.click.City}</ValueField>
+          </Field>
+          <Field>
+            <TitleField>Estado</TitleField>
+            <ValueField>{marker.click.State}</ValueField>
+          </Field>
+        </AllFields>
       </DivSecundaria>
-      <DivSecundaria width="50vw">
+      <DivSecundaria localiza>
         <OSM />
       </DivSecundaria>
     </DivPrincipal>

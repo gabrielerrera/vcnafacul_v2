@@ -1,5 +1,7 @@
 import styled, {css} from 'styled-components';
 
+const taxaYoutube = 0.5625;
+
 export const Colors = {
   color1: '#00305A',
   color2: '#95A7BF',
@@ -11,67 +13,80 @@ export const Colors = {
 }
 
 export const StyledDiv = styled.div`
-  margin-left: 60px;
-  margin-right: 60px;
-  margin-bottom: 20px;
-
-  @media (max-width: 400px) {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
+  display: flex;
+  justify-content: space-around;
 
 `;
 
 export const DivPrincipal = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 
-  @media (max-width: 400px) {
+  @media (max-width: 800px) {
     flex-direction: column-reverse;
+    align-items: center;
   }
+
+  ${props => props.localiza && css`
+  @media (max-width: 800px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  `}
 
 `
 export const DivSecundaria = styled.div`
-  width: ${props => props.width || "50vw"};
-  min-width: 400px;
-  margin: 20px;
+  width: 45vw;
+  margin: 2vw;
 
-  @media (max-width: 400px) {
-    min-width: 300px;
+  @media (max-width: 800px) {
+    width: 90vw;
   }
 
 `
 
 export const Title = styled.h1`
-  font-size: ${props => props.font || "8rem"};
+  font-size: 8rem;
   text-transform: uppercase;
-  line-height: 80px;
+  line-height: 7rem;
   font-family: 'Passion One';
   margin-bottom: 10px;
   margin-top: 10px;
   color: #00305A;
+  
 
   ${props => props.colors && css`
   color: white;
  
   `}
 
-  @media (max-width: 400px) {
-    line-height: 40px;
-    font-size: 50px;
+  @media (max-width: 600px) {
+    line-height: 6rem;
+    font-size: 7rem;
+    text-align: center;
   }
+
+  @media (min-width: 600px) and (max-width: 800px){
+    line-height: 6rem;
+    font-size: 7.5rem;
+    text-align: center;
+}
 
 `
 
 export const Body = styled.p`
-  font-size: ${props => props.font || "2.7rem"};
-  max-width: 500px;
-  line-height: ${props => props.line || "30px"};
+  font-size: 2.3rem;
+  line-height: 2.3rem;
   font-family: 'pavanam';
-  margin-top: 0px;
+  margin-top: 10px;
   margin-bottom: 10px;
   color: #00305A;
   font-weight: ${props => props.weight || "normal"};
+
+  @media (max-width: 800px) {
+    text-align: center;
+  }
 
   ${props => props.colors && css`
   color: white;
@@ -82,8 +97,8 @@ export const Body = styled.p`
   margin-top: 5px;
   `}
 
-  @media (max-width: 400px) {
-    line-height: 20px;
-    font-size: 15px;
+  @media (max-width: 800px) {
+    line-height: 2rem;
+    font-size: 2rem;
   }
 `

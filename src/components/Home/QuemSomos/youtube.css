@@ -1,0 +1,12 @@
+.youtube {
+  width: 45vw;
+  height: 25vw;
+}
+
+@media (max-width: 800px) {
+  .youtube {
+    width: 90vw;
+    height: 50vw;
+  }
+  
+}

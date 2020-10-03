@@ -1,12 +1,12 @@
 import React from "react";
 import { Body, StyledDiv, DivPrincipal, DivSecundaria, Title  } from "../../globalStyle";
-import { Button } from "./styled";
+import { Button, DivButton } from "./styled";
 
 const DivPrincipalHomePage = () => (
   <StyledDiv>
     <DivPrincipal>
       <DivSecundaria>
-        <Title>nossa missão é <br/> ver você na <br/> facul!</Title>
+        <Title>nossa missão é ver você na facul!</Title>
         <Body>
           O conhecimento é a única coisa que ninguém tira de você. O Projeto
           Você na Facul é uma plataforma exclusiva para alunos em
@@ -14,10 +14,10 @@ const DivPrincipalHomePage = () => (
           gente quanto buscar um cursinho popular mais próximo de você. E ai,
           vamos nessa?
         </Body>
-        <div>
+        <DivButton>
           <Button primary >Busque um Cursinho</Button>
           <Button>Estude com a Gente</Button>
-        </div>
+        </DivButton>
       </DivSecundaria>
       <DivSecundaria>Imagem</DivSecundaria>
     </DivPrincipal>

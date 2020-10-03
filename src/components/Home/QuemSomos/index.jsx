@@ -27,7 +27,7 @@ const QuemSomos = () => (
     >
       <StyledDiv>
       <DivPrincipal>
-        <DivSecundaria className='youtube' style={{marginTop: '50px'}} ><Youtube/></DivSecundaria>
+        <DivSecundaria youtube className='youtube' ><Youtube/></DivSecundaria>
         <DivSecundaria>
           <Title colors >Quem Somos?</Title>
           <Body colors >
