@@ -1,4 +1,4 @@
-import styled, {css} from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const taxaYoutube = 0.5625;
 
@@ -38,7 +38,7 @@ export const DivPrincipal = styled.div`
 `
 export const DivSecundaria = styled.div`
   width: 45vw;
-  margin: 2vw;
+  margin: 1vw;
 
   @media (max-width: 800px) {
     width: 90vw;

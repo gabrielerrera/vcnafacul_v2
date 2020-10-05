@@ -13,20 +13,17 @@ export const Nav = styled.nav`
   width: 100%;
   margin-left: 20px;
   margin-right: 20px;
+  justify-content: flex-start;
 
   @media (max-width: 800px){
-    justify-content: center;
-    flex-direction: column;
+    align-items: center;
+
   }
 `
 export const Div = styled.div`
   display: flex;
   width: 100%;
-
-
-  @media (max-width: 800px){
-    justify-content: space-evenly;
-  }
+  justify-content: flex-start;
 
   @media (min-width: 600px) and (max-width: 800px){
 

@@ -9,8 +9,8 @@ const MenuNav = () => (
   <Nav>
     <Img src={logo} alt="Logo você na Facul"/>
     <Div>
-        <StyleLink to='/' >Sobre</StyleLink>
-        <StyleLink to='/' >Localiza</StyleLink>
+        <StyleLink to='/' >Quem<br/>Somos</StyleLink>
+        <StyleLink to='/' >Localiza<br/>Cursinho</StyleLink>
     </Div>
   </Nav>
   </StyledDiv>

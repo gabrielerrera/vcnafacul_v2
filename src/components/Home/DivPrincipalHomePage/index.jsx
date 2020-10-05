@@ -19,7 +19,7 @@ const DivPrincipalHomePage = () => (
           <Button>Estude com a Gente</Button>
         </DivButton>
       </DivSecundaria>
-      <DivSecundaria>Imagem</DivSecundaria>
+      <DivSecundaria><Body>Slide Show</Body></DivSecundaria>
     </DivPrincipal>
   </StyledDiv>
 );

@@ -1,6 +1,8 @@
 import { createStore, applyMiddleware } from "redux";
-import promise from "redux-promise";
+import createSagaMiddleware from 'redux-saga';
 import reducers from './reducers/Index';
+
+const sagaMiddleware = createSagaMiddleware()
 
 
 function saveToLocalStorage(state) {
@@ -25,7 +27,7 @@ function loadFromLocalStorage() {
 
 const persistedState = loadFromLocalStorage();
 
-const store = createStore(reducers, persistedState, applyMiddleware(promise));
+const store = createStore(reducers, persistedState, applyMiddleware(sagaMiddleware));
 
 store.subscribe(() => saveToLocalStorage(store.getState()));
 
