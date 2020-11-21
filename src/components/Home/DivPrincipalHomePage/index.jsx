@@ -8,15 +8,13 @@ const DivPrincipalHomePage = () => (
       <DivSecundaria>
         <Title>nossa missão é ver você na facul!</Title>
         <Body>
-          O conhecimento é a única coisa que ninguém tira de você. O Projeto
-          Você na Facul é uma plataforma exclusiva para alunos em
-          vulnerabilidade socioecoômica. Aqui você pode tanto estudar com a
-          gente quanto buscar um cursinho popular mais próximo de você. E ai,
-          vamos nessa?
+        Nós queremos proporciopnar a você em a oportunidade de conhecer seus direitos e continuar seus estudos.
+        </Body>
+        <Body>
+          Conheça os cursinho presenciais mais próximos de vocês 
         </Body>
         <DivButton>
           <Button primary >Busque um Cursinho</Button>
-          <Button>Estude com a Gente</Button>
         </DivButton>
       </DivSecundaria>
       <DivSecundaria><Body>Slide Show</Body></DivSecundaria>

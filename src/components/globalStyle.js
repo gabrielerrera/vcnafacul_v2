@@ -38,6 +38,7 @@ export const DivPrincipal = styled.div`
 `
 export const DivSecundaria = styled.div`
   width: 45vw;
+  max-width: 600px;
   margin: 1vw;
 
   @media (max-width: 800px) {

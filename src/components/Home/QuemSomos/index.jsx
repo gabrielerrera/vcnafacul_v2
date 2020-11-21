@@ -31,13 +31,15 @@ const QuemSomos = () => (
         <DivSecundaria>
           <Title colors sobre >Quem Somos?</Title>
           <Body colors sobre >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            sit amet gravida justo. In elementum venenatis tempor. Sed mattis
-            est molestie venenatis volutpat. Maecenas mauris enim, vestibulum
-            vitae iaculis sit amet, viverra eget ante. Nam pharetra risus eget
-            fringilla posuere. Etiam accumsan lacus nec nisl efficitur viverra.
-            Donec semper sodales justo nec congue. Nulla condimentum metus non
-            erat varius commodo.{" "}
+            Somos um grupo de voluntários com um propósito maior: fazer a diferença.
+          </Body>
+          <Body colors sobre >
+          Trabalhamos para que o ambiente universitário seja um ambiente de equidade e oportunidade.
+          </Body>
+          <Body colors sobre >
+          Com isso, nossa missão é apresentar para nosso público todos os direitos que lhes dizem respeito, 
+          como cotas, isenções e bolsas, além de construir uma plataforma totalmente exclusiva para pessoas 
+          em vulnerabilidade socioeconômica com conteúdos pré-vestibular.
           </Body>
         </DivSecundaria>
       </DivPrincipal>

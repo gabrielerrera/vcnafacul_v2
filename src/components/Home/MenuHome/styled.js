@@ -10,10 +10,10 @@ export const Img =  styled.img`
 export const Nav = styled.nav`
   display: flex;
   align-items: center;
-  width: 100%;
+
   margin-left: 20px;
   margin-right: 20px;
-  justify-content: flex-start;
+  justify-content: center;
 
   @media (max-width: 800px){
     align-items: center;

@@ -5,15 +5,15 @@ import { Div, Img, StyleLink, Nav } from './styled';
 import { StyledDiv } from '../../globalStyle';
 
 const MenuNav = () => (
-  <StyledDiv>
+
   <Nav>
     <Img src={logo} alt="Logo você na Facul"/>
-    <Div>
+    {/* <Div>
         <StyleLink to='/' >Quem<br/>Somos</StyleLink>
         <StyleLink to='/' >Localiza<br/>Cursinho</StyleLink>
-    </Div>
+    </Div> */}
   </Nav>
-  </StyledDiv>
+
 )
 
 export default MenuNav;
