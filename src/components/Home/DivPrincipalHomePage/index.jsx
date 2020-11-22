@@ -14,7 +14,7 @@ const DivPrincipalHomePage = () => (
       <DivSecundaria>
         <Title>nossa missão é ver você na facul!</Title>
         <Body>
-        Nós queremos proporciopnar a você em a oportunidade de conhecer seus direitos e continuar seus estudos.
+        Nós queremos proporciopnar a você a oportunidade de conhecer seus direitos e continuar seus estudos.
         </Body>
         <Body>
           Conheça os cursinho presenciais mais próximos de vocês 
