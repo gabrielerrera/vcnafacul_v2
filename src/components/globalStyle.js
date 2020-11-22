@@ -28,6 +28,7 @@ export const DivPrincipal = styled.div`
   }
 
   ${props => props.localiza && css`
+  
   @media (max-width: 800px) {
     flex-direction: column;
     align-items: center;
@@ -40,6 +41,10 @@ export const DivSecundaria = styled.div`
   width: 45vw;
   max-width: 600px;
   margin: 1vw;
+
+  @media (min-width: 801px) and (max-width: 1200px) {
+    width: 40vw;
+  }
 
   @media (max-width: 800px) {
     width: 90vw;
@@ -77,7 +82,7 @@ export const Title = styled.h1`
 
   `}
 
-  @media (min-width: 600px) and (max-width: 800px){
+  @media (min-width: 600px) and (max-width: 1200px){
     line-height: 6rem;
     font-size: 7.5rem;
     text-align: center;

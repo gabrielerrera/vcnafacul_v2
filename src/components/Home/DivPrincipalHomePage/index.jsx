@@ -1,6 +1,7 @@
 import React from "react";
-import { Body, StyledDiv, DivPrincipal, DivSecundaria, Title  } from "../../globalStyle";
-import { Button, DivButton } from "./styled";
+import { Body, StyledDiv, DivPrincipal, DivSecundaria, Title } from "../../globalStyle";
+import { Button, DivButton, Img } from "./styled";
+import slide from '../../images/Home/DivPrincipal/5.png';
 
 const Teste = () => {
   console.log("Testando");
@@ -22,7 +23,9 @@ const DivPrincipalHomePage = () => (
           <Button onClick={Teste()} primary >Busque um Cursinho</Button>
         </DivButton>
       </DivSecundaria>
-      <DivSecundaria><Body>Slide Show</Body></DivSecundaria>
+      <DivSecundaria>
+        <Img src={slide} alt="Imagem Redes Sociais"/>
+        </DivSecundaria>
     </DivPrincipal>
   </StyledDiv>
 );

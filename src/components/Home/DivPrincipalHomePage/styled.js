@@ -35,3 +35,13 @@ export const DivButton = styled.div`
     justify-content: center;
   }
 `
+
+
+export const Img = styled.img`
+  max-width: 600px;
+  width: 40vw;
+
+  @media (max-width: 800px) {
+    width: 90vw
+  }
+`
