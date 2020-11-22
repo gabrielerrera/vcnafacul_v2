@@ -29,7 +29,7 @@ const complement = (marker) => {
 
 const Localiza = ({ marker }) => (
   <StyledDiv>
-    <DivPrincipal localiza>
+    <DivPrincipal className="LocalizaCursinho" localiza>
       <DivSecundaria>
         <Title>Localiza Cursinho</Title>
         <AllFields>

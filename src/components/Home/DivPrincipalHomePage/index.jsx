@@ -2,6 +2,11 @@ import React from "react";
 import { Body, StyledDiv, DivPrincipal, DivSecundaria, Title  } from "../../globalStyle";
 import { Button, DivButton } from "./styled";
 
+const Teste = () => {
+  console.log("Testando");
+  window.scrollBy(0, 1200);
+}
+
 const DivPrincipalHomePage = () => (
   <StyledDiv>
     <DivPrincipal>
@@ -14,7 +19,7 @@ const DivPrincipalHomePage = () => (
           Conheça os cursinho presenciais mais próximos de vocês 
         </Body>
         <DivButton>
-          <Button primary >Busque um Cursinho</Button>
+          <Button onClick={Teste()} primary >Busque um Cursinho</Button>
         </DivButton>
       </DivSecundaria>
       <DivSecundaria><Body>Slide Show</Body></DivSecundaria>
