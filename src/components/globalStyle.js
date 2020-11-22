@@ -107,6 +107,10 @@ export const Body = styled.p`
   color: white;
   `}
 
+  ${props => props.bold && css`
+  font-weight: bold;
+  `}
+
   ${props => props.loc && css`
   margin-bottom: 2px;
   margin-top: 5px;
