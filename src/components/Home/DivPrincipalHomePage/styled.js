@@ -39,7 +39,7 @@ export const DivButton = styled.div`
 
 export const Img = styled.img`
   max-width: 600px;
-  width: 40vw;
+  width: 45vw;
 
   @media (max-width: 800px) {
     width: 90vw

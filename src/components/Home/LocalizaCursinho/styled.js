@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 
 export const Field = styled.div`
@@ -21,4 +21,24 @@ export const ValueField = styled.p`
 export const AllFields = styled.div`
   display: flex;
   flex-wrap: wrap;
+`
+
+export const Button = styled.a`
+  background-color: #00305A;
+  color: white;
+  border: 1px solid #00305A;
+  font-size: 2rem;
+  font-family: 'Passion One';
+  text-decoration: none;
+  padding: 5px;
+  text-transform: uppercase;
+  width: 175px;
+  margin: 5px;
+  
+
+  ${props => props.primary && css`
+  background-color: white;
+  color: #00305A;
+  `}
+
 `

@@ -9,9 +9,10 @@ import {
   DivPrincipal,
   DivSecundaria,
   Title,
+  Body
 } from "../../globalStyle";
 
-import { AllFields, Field, ValueField, TitleField } from "./styled";
+import { AllFields, Field, ValueField, TitleField, Button } from "./styled";
 import { marker } from "leaflet";
 
 const complement = (marker) => {
@@ -59,6 +60,8 @@ const Localiza = ({ marker }) => (
             <ValueField>{marker.click.State}</ValueField>
           </Field>
         </AllFields>
+        <Body>Conhece um cursinho popular?</Body>
+        <Button href="https://forms.gle/Ty3cCAeF7Skirwre7">Cadastre um cursinho</Button>
       </DivSecundaria>
       <DivSecundaria localiza>
         <OSM />
