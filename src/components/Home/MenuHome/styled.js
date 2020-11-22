@@ -13,7 +13,7 @@ export const Nav = styled.nav`
 
   margin-left: 20px;
   margin-right: 20px;
-  justify-content: center;
+  justify-content: flex-start;
 
   @media (max-width: 800px){
     align-items: center;
