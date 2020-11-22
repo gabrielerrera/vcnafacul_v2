@@ -59,6 +59,10 @@ const Localiza = ({ marker }) => (
             <TitleField>Estado</TitleField>
             <ValueField>{marker.click.State}</ValueField>
           </Field>
+          <Field>
+            <TitleField>Site</TitleField>
+            <ValueField><a href={marker.click.Site}>{marker.click.Site}</a></ValueField>
+          </Field>
         </AllFields>
         <Body>Conhece um cursinho popular?</Body>
         <Button href="https://forms.gle/Ty3cCAeF7Skirwre7">Cadastre um cursinho</Button>
