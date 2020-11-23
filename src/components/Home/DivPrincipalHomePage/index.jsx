@@ -9,7 +9,6 @@ const Teste = () => {
 }
 
 const DivPrincipalHomePage = () => (
-  <StyledDiv>
     <DivPrincipal>
       <DivSecundaria>
         <Title>nossa missão é ver você na facul!</Title>
@@ -27,7 +26,6 @@ const DivPrincipalHomePage = () => (
         <Img src={slide} alt="Imagem Redes Sociais"/>
         </DivSecundaria>
     </DivPrincipal>
-  </StyledDiv>
 );
 
 export default DivPrincipalHomePage;

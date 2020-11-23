@@ -2,14 +2,14 @@ import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 
 export const Img =  styled.img`
-  width: 20rem;
-  position: relative;
+  width: 15rem;
   margin-top: 20px;
 `
 
 export const Nav = styled.nav`
   display: flex;
   align-items: center;
+  width: 100%;
 
   margin-left: 20px;
   margin-right: 20px;
@@ -17,7 +17,6 @@ export const Nav = styled.nav`
 
   @media (max-width: 800px){
     align-items: center;
-
   }
 `
 export const Div = styled.div`

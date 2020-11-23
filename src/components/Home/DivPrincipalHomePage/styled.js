@@ -31,17 +31,16 @@ export const DivButton = styled.div`
     align-items: center;
   }
 
-  @media (min-width: 400px) and (max-width: 800px) {
+  @media (min-width: 400px) and (max-width: 1050px) {
     justify-content: center;
   }
 `
 
 
 export const Img = styled.img`
-  max-width: 600px;
   width: 45vw;
 
-  @media (max-width: 800px) {
+  @media (max-width: 1050px) {
     width: 90vw
   }
 `

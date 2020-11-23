@@ -1,0 +1,12 @@
+.hostinger {
+    width: 200px;
+    height: 50px;
+    background: url('../../images/Home/patrocinadores/HostingerGrey.png') no-repeat;
+    background-size: 200px;
+    transition: 0.3s;
+}
+
+.hostinger:hover {
+    background: url('../../images/Home/patrocinadores/HostingerPurple.png') no-repeat;
+    background-size: 200px;
+}

@@ -61,7 +61,9 @@ const Localiza = ({ marker }) => (
           </Field>
           <Field>
             <TitleField>Site</TitleField>
+            <div style={{maxWidth: '250px'}} >
             <ValueField><a href={marker.click.Site}>{marker.click.Site}</a></ValueField>
+            </div>
           </Field>
         </AllFields>
         <Body>Conhece um cursinho popular?</Body>

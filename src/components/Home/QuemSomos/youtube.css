@@ -1,14 +1,19 @@
 .youtube {
   width: 45vw;
   height: 25vw;
-  max-width: 600px;
-  max-height: 341px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1050px) {
   .youtube {
     width: 90vw;
     height: 50vw;
+  }
+
+  @media (min-width: 1400px) {
+    .youtube {
+      width: 45vw;
+      height: 25vw;
+    }
   }
   
 }

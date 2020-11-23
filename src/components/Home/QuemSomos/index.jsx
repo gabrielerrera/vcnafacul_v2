@@ -25,7 +25,6 @@ const QuemSomos = () => (
       }}
     >
       <Recorte normal src={recorte} alt="divisão" />
-      <StyledDiv>
       <DivPrincipal>
         <DivSecundaria youtube className='youtube' ><Youtube/></DivSecundaria>
         <DivSecundaria>
@@ -43,7 +42,6 @@ const QuemSomos = () => (
           </Body>
         </DivSecundaria>
       </DivPrincipal>
-      </StyledDiv>
       <Recorte inverso src={recorte} alt="divisão" />
     </div>
 );

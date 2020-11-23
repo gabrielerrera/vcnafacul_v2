@@ -1,8 +1,8 @@
 import React from 'react';
-import logo from '../../images/logofundobranco.png';
+import logo from '../../images/logo.png';
 
-import { Div, Img, StyleLink, Nav } from './styled';
-import { StyledDiv, DivPrincipal } from '../../globalStyle';
+import { Img, Nav } from './styled';
+import { DivPrincipal } from '../../globalStyle';
 
 const MenuNav = () => (
   <DivPrincipal>

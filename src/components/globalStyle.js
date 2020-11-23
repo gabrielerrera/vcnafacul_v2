@@ -1,71 +1,62 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from "styled-components";
 
 const taxaYoutube = 0.5625;
 
 export const Colors = {
-  color1: '#00305A',
-  color2: '#95A7BF',
-  color3: '#F2AF5C',
-  color4: '#6CC9FF',
-  color5: '#F49E6C',
-  color6: '#5679A6',
-  color7: '#F8591F',
-}
+  color1: "#00305A",
+  color2: "#95A7BF",
+  color3: "#F2AF5C",
+  color4: "#6CC9FF",
+  color5: "#F49E6C",
+  color6: "#5679A6",
+  color7: "#F8591F",
+};
 
-export const StyledDiv = styled.div`
-  display: flex;
-  justify-content: space-around;
-
-`;
+export const StyledDiv = styled.div``;
 
 export const DivPrincipal = styled.div`
   display: flex;
   justify-content: center;
+  margin: 0vw 50px;
 
-  @media (max-width: 800px) {
+  @media (max-width: 1050px) {
     flex-direction: column-reverse;
     align-items: center;
   }
 
-  ${props => props.localiza && css`
-  
-  @media (max-width: 800px) {
-    flex-direction: column;
-    align-items: center;
+  ${(props) =>
+    props.localiza &&
+    css`
+      @media (max-width: 800px) {
+        flex-direction: column;
+        align-items: center;
+      }
+    `}
+`;
+export const DivSecundaria = styled.div`
+  margin: 5px;
+
+  @media (min-width: 1051px) and (max-width: 1200px) {
+    width: 45vw;
   }
 
-  `}
-
-`
-export const DivSecundaria = styled.div`
-  width: 45vw;
-  max-width: 600px;
-  margin: 1vw;
-
-  @media (min-width: 801px) and (max-width: 1200px) {
-    width: 40vw;
+  @media (min-width: 1600px) {
+    max-width: 45vw;
   }
 
   @media (max-width: 800px) {
     width: 90vw;
   }
-
-`
+`;
 
 export const Title = styled.h1`
   font-size: 8rem;
   text-transform: uppercase;
   line-height: 7rem;
-  font-family: 'Passion One';
+  font-family: "Passion One";
   margin-bottom: 10px;
   margin-top: 10px;
-  color: #00305A;
-  
-
-  ${props => props.colors && css`
-  color: white;
- 
-  `}
+  color: #00305a;
 
   @media (max-width: 600px) {
     line-height: 6rem;
@@ -73,63 +64,79 @@ export const Title = styled.h1`
     text-align: center;
   }
 
-  ${props => props.sobre && css`
-
-  @media (max-width: 1000px) {
-    font-size: 5rem;
-    line-height: 5rem;
-  }
-
-  `}
-
-  @media (min-width: 600px) and (max-width: 1200px){
+  @media (min-width: 600px) and (max-width: 1200px) {
     line-height: 6rem;
     font-size: 7.5rem;
     text-align: center;
-}
+  }
 
-`
+  @media (min-width: 1600px) {
+    font-size: 10rem;
+    line-height: 10rem;
+  }
+
+  ${(props) =>
+    props.colors &&
+    css`
+      color: white;
+    `}
+
+  ${(props) =>
+    props.sobre &&
+    css`
+      @media (min-width: 1000px) and (max-width: 1600px) {
+        font-size: 5rem;
+        line-height: 5rem;
+      }
+    `}
+`;
 
 export const Body = styled.p`
   font-size: 2.3rem;
   line-height: 2.3rem;
-  font-family: 'pavanam';
+  font-family: "pavanam";
   margin-top: 10px;
   margin-bottom: 10px;
-  color: #00305A;
-  font-weight: ${props => props.weight || "normal"};
+  color: #00305a;
+  font-weight: ${(props) => props.weight || "normal"};
 
-  @media (max-width: 800px) {
+  @media (max-width: 1050px) {
     text-align: center;
   }
 
-  ${props => props.colors && css`
-  color: white;
-  `}
+  ${(props) =>
+    props.colors &&
+    css`
+      color: white;
+    `}
 
-  ${props => props.bold && css`
-  font-weight: bold;
-  `}
+  ${(props) =>
+    props.bold &&
+    css`
+      font-weight: bold;
+    `}
 
-  ${props => props.loc && css`
-  margin-bottom: 2px;
-  margin-top: 5px;
-  `}
+  ${(props) =>
+    props.loc &&
+    css`
+      margin-bottom: 2px;
+      margin-top: 5px;
+    `}
 
-  ${props => props.sobre && css`
+  ${(props) =>
+    props.sobre &&
+    css`
+      @media (min-width: 1200px) {
+        font-size: 3rem;
+      }
 
-  @media (min-width: 1200px) {
-    font-size: 3rem;
-  }
-
-  @media (max-width: 900px) {
-    font-size: 1.5rem;
-  }
-
-  `}
+      @media (max-width: 900px) {
+        font-size: 1.5rem;
+      }
+    `}
 
   @media (max-width: 800px) {
     line-height: 2rem;
     font-size: 2rem;
   }
-`
+`;
