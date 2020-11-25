@@ -5,7 +5,7 @@ import './styled.css';
 import { Hostinger } from './styled';
 import { DivPrincipal, Body } from '../../globalStyle';
 
-const Patrocinadores = () => (
+const Apoiadores = () => (
     <div style={{
         marginBottom: "20px",
         marginTop: "20px",
@@ -15,7 +15,7 @@ const Patrocinadores = () => (
         alignItems: "center",
         flexDirection: "column"
         }}>
-        <Body bold >Patrocinadores</Body>
+        <Body bold >Apoiadores</Body>
         <div style={{marginTop: "30px", display: "flex", justifyContent: "center"}}>
         <a href="https://www.hostinger.com.br/">
             <div className='hostinger'></div>
@@ -24,4 +24,4 @@ const Patrocinadores = () => (
     </div>
 )
 
-export default Patrocinadores;
+export default Apoiadores;

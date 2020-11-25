@@ -7,6 +7,8 @@ export const Field = styled.div`
   @media (max-width: 600px) {
     width: 300px;
     margin-top: 5px;
+    
+    
   }
 `
 
@@ -34,6 +36,7 @@ export const Button = styled.a`
   text-transform: uppercase;
   width: 175px;
   margin: 5px;
+  
   
 
   ${props => props.primary && css`
